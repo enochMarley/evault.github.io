@@ -1,0 +1,239 @@
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 199;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+.nav > li {
+  position: relative;
+  display: inline;
+}
+.nav > li > a {
+  position: relative;
+  display: inline;
+  padding: 10px 15px;
+}
+.navbar{
+    background: transparent;
+    border: 1px solid transparent;
+    transition: all 0.45s ease-in-out;
+}
+.other-nav{
+    background: #00b2ff;
+}
+.change-navbar-bg{
+    background: #00b2ff;
+}
+.othernavbar{
+    background: #232323;
+    opacity: 0.85;
+}
+.navbar a{
+    color: #fff !important;
+    transition: all 0.3s ease-in-out;
+}
+.navbar a:hover{
+    color: orange !important;
+}
+.menuBtn, .menuBtn:hover{
+    background: transparent !important;
+    border: 1px solid transparent !important;
+    color: #fff;
+}
+.card-div{
+    padding: 10px;
+    border: 1px solid #c0c0c0;
+    box-shadow: 0px 6px 6px #c0c0c0, 0px 7px 7px #c0c0c0;
+    border-radius: 3px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.card-div2{
+  background-image: url("../includes/images/fileBg.png");
+}
+.main-div{
+    background-image: url("../includes/images/safebg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 20vh 0 35vh 0;
+    overflow-x: hidden;
+}
+.home-btn{
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+.signup-div{
+    margin-top: 2%;
+}
+.login-div{
+    margin-top: 2%;
+}
+.errMsg{
+    color: #ff0000;
+}
+.succMsg{
+    color: #ff0000;
+}
+.signup-form input{
+    width: 90%;
+    margin-left: 5%;
+    height: 50px;
+    border-radius: 3px;
+    border: 1px solid #c0c0c0;
+    margin-bottom: 2%;
+    text-align: center;
+}
+.signup-form button{
+    margin-left: 5%;
+    width: 90%;
+}
+.login-form input{
+    width: 90%;
+    margin-left: 5%;
+    height: 50px;
+    border-radius: 3px;
+    border: 1px solid #c0c0c0;
+    margin-bottom: 2%;
+    text-align: center;
+}
+.login-form button{
+    width: 90%;
+    margin-left: 5%;
+}
+.logout-btn{
+    background: transparent;
+    margin-top: -5px;
+}
+.dropDiv{
+    padding: 10vh 0 15vh 0;
+    overflow-x: hidden;
+}
+.home-statement h1{
+    color: #00b2ff;
+    text-align: center;
+}
+.home-statement h3{
+    color: #fff;
+    text-align: center;
+}
+.menu-ul{
+    margin-top: 15px;
+}
+.home-option-buttons button{
+    width: 80%;
+    height: 60px;
+    margin: 0 0 3% 10%;
+}
+.drop-form-div{
+    padding: 30px;
+    border: 1px solid #c0c0c0;
+    box-shadow: 0px 6px 6px #c0c0c0, 0px 7px 7px #c0c0c0;
+    border-radius: 3px;
+}
+.drop-form input[type="text"]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #c0c0c0;
+    text-align: center;
+    border-radius: 3px;
+    margin-bottom: 5%;
+}
+.drop-div{
+    border: 3px dashed #c0c0c0;
+    border-radius: 3px;
+    height: auto;
+}
+.drop-div h3{
+    letter-spacing: 5px;
+    text-align: center;
+    color: #c0c0c0;
+}
+.drop-div .row{
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+.drop-div .row input[type="file"]{
+    display: none;
+}
+.drop-div .row label{
+    background: #f0ad4e;
+    height: 70px;
+    width: 100%;
+    padding: 10px;
+    line-height: 30px;
+    cursor: pointer;
+    border-radius: 3px;
+    color: #fff;
+    text-align: center;
+}
+.drop-div .row label:hover{
+    background: #ec971f;
+}
+.drop-div .row button[type="submit"]{
+    height: 70px;
+    width: 100%;
+    padding: 10px;
+}
+.progress-action-div span{
+    font-size: 18px;
+    cursor: pointer;
+}
+/*Dialog styling*/
+.no-close .ui-dialog-titlebar-close{
+   display: none;
+}
+.ui-dialog-titlebar{
+   background: #00b2ff;
+}
+.ui-dialog-title{
+   color: #fff;
+   text-align: center;
+}
+.feedbackModal *{
+    text-align: center;
+}
+.feedbackModal .showCodeBtn{
+    margin-left: 40%;
+}
+/*End Dialog styling*/
