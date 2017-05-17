@@ -10,13 +10,6 @@
     $rawUserVaultNumber = tokenCodeGenerator();
     $response = array();
 
-    /*$userFullName = encryptData($rawUserFullName);
-    $username = encryptData($rawUsername);
-    $userEmail = encryptData($rawUserEmail);
-    $userPhone = encryptData($rawUserPhone);
-    $userPassword = encryptData($rawUserPassword);
-    $userVaultNumber = encryptData($rawUserVaultNumber);*/
-
     $query = "SELECT * FROM vaultuser WHERE userEmail = '$rawUserEmail' OR userName = '$rawUsername';";
     $result = $database->query($query);
     if (mysqli_num_rows($result) > 0) {

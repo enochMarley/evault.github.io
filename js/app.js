@@ -27,5 +27,8 @@ app.config(function($routeProvider) {
             },
             templateUrl: 'includes/pages/userPage.html',
             controller: 'userCtrl'
+        }).when('/contact', {
+            templateUrl: 'includes/pages/contact.html',
+            controller: 'signUpCtrl'
         });
 });
